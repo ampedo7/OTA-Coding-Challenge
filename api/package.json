@@ -1,0 +1,52 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "gptdev": "nodemon -r tsconfig-paths/register -r ts-node/register src/server.ts",
+    "build": "tsc -p .",
+    "db:migrate-seed-reset": "yarn db:migrate-reset && yarn db:migrate && yarn db:seedall",
+    "db:migrate": "npx sequelize-cli db:migrate",
+    "db:migrate-rollback": "npx sequelize-cli db:migrate:undo",
+    "db:migrate-reset": "npx sequelize-cli db:migrate:undo:all",
+    "db:make-migration": "npx sequelize-cli migration:generate",
+    "db:make-model": "npx sequelize-cli model:generate",
+    "db:make-seeder": "npx sequelize-cli seed:generate",
+    "db:seed": "npx sequelize-cli db:seed --seed",
+    "db:seed-undo": "npx sequelize-cli db:seed:undo --seed",
+    "db:seedall": "npx sequelize-cli db:seed:all",
+    "db:seedall-undo": "npx sequelize-cli db:seed:undo:all"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.2.0",
+    "@types/nodemailer": "^6.4.17",
+    "@types/uuid": "^10.0.0",
+    "@types/xml2js": "^0.4.14",
+    "nodemon": "^3.1.10",
+    "sequelize-cli": "^6.6.3",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.19",
+    "axios": "^1.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "juice": "^11.0.1",
+    "mysql2": "^3.14.3",
+    "nodemailer": "^7.0.5",
+    "reflect-metadata": "^0.2.2",
+    "sequelize": "^6.37.7",
+    "sequelize-typescript": "^2.1.6",
+    "sqlite3": "^5.1.7",
+    "xml2js": "^0.6.2"
+  }
+}
