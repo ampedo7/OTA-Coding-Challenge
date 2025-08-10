@@ -1,0 +1,46 @@
+{
+  "env": {
+    "browser": true,
+    // "es2021": true,
+    "jasmine": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": ["plugin:react/recommended", "standard-with-typescript"],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "@typescript-eslint/no-unsafe-argument": 0,
+    "@typescript-eslint/indent": 0,
+    "@typescript-eslint/type-annotation-spacing": 0,
+    "@typescript-eslint/block-spacing": 0,
+    "@typescript-eslint/comma-spacing": 0,
+    "@typescript-eslint/brace-style": 0,
+    "@typescript-eslint/func-call-spacing": 0,
+    "@typescript-eslint/semi": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/consistent-type-imports": 0,
+    "@typescript-eslint/no-unused-vars": 0,
+    "@typescript-eslint/member-delimiter-style": 0,
+    "@typescript-eslint/no-confusing-void-expression": 0,
+    "@typescript-eslint/prefer-optional-chain": 0,
+    "eslint-disable-next-line": 0,
+    "multiline-ternary": 0,
+    "@typescript-eslint/key-spacing": 0,
+    "@typescript-eslint/keyword-spacing": 0,
+    "@typescript-eslint/lines-between-class-members": 0,
+    "@typescript-eslint/no-extra-parens": 0,
+    "@typescript-eslint/no-throw-literal": 0,
+    "@typescript-eslint/object-curly-spacing": 0,
+    "@typescript-eslint/quotes": 0,
+    "@typescript-eslint/space-before-blocks": 0,
+    "@typescript-eslint/space-before-function-paren": 0,
+    "@typescript-eslint/space-infix-ops": 0,
+    "@typescript-eslint/ban-types": 0,
+    "@typescript-eslint/comma-dangle": 0
+  }
+}
